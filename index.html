@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetado</title>
+    <style>
+		/* Estilos para los anillos de porcentaje */
+		.ring {
+		  position: relative;
+		  display: inline-block;
+		  margin: 10px;
+		  width: 120px;
+		  height: 120px;
+		  background-color: #fff;
+		  border-radius: 50%;
+		}
+		.ring::before {
+		  content: "";
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  z-index: 1;
+		  width: 100%;
+		  height: 100%;
+		  border: 10px solid rgba(0, 0, 0, 0.1);
+		  border-radius: 50%;
+		}
+		.ring::after {
+		  content: "";
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  z-index: 2;
+		  width: 100%;
+		  height: 100%;
+		  border-top: 10px solid #00bfff;
+		  border-right: 10px solid #00bfff;
+		  border-bottom: 10px solid #00bfff;
+		  border-left: 10px solid #fff;
+		  border-radius: 50%;
+		  transform: rotate(0deg);
+		  transform-origin: center;
+		}
+
+		/* Estilos para el texto dentro de los anillos */
+		.text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 24px;
+			font-weight: bold;
+			color: #000;
+		}
+		.text span {
+			font-size: 16px;
+			font-weight: normal;
+		}
+	</style>
+</head>
+<body>
+    <header style="background-color: #333333; display: flex; justify-content: space-between;
+    align-items: center;">
+        <div class="logo">
+          <img src="Imágenes/APLogo.png" alt="Logo de tu sitio web" height="80px">
+        </div>
+        <div class="redes-sociales" style="text-decoration: none;">
+          <a href="" target="_blank">
+            <img src="Imágenes/linkedin.png" alt="" height="40px">
+          </a>
+          <a href="" target="_blank">
+            <img src="Imágenes/Fiverr-Logo.png" alt="" height="40px">
+          </a>
+          <a href="" target="_blank">
+            <img src="Imágenes/github.png" alt="" height="40px">
+          </a>
+          <a href="" target="_blank">
+            <img src="Imágenes/instagram.png" alt="" height="40px">
+           </a>
+        </div>
+    </header>
+    <div class="body" style="background-color: #505050; color: whitesmoke;">
+        <!--Banner-->
+        <img src="Imágenes/Banner.png" alt="" style="width: 100%;">
+        <div style=" display: flex;">
+            <!--Perfil-->
+            <img src="Imágenes/Foto de perfil.jpeg" alt="" style="width: 20%;">
+            <div class="name"  style="margin-left: 10px; justify-items: center;">
+                <h1>Josué Giménez</h1>
+                <p>Full Stack Developer Junior</p>
+            </div>
+            <!--Sobre mí-->
+            <div class="about-me" style="margin-left: 60px;"> 
+                <h1>Sobre mí</h1>
+                <p>Estudiante de ingeniería mecatrónica, apasionado por la tecnología y comprometido con su avance. Con habilidades en programación, busco mejorar mis conocimientos en esta área para aplicarlos en mi carrera. Mi dedicación y voluntad me hacen destacar en mi camino hacia el éxito.</p>
+            </div>
+        </div>
+        <!--Experiencia--> 
+        <h1>Experiencia</h1>
+        <div class="Experience" style="margin-left: 10px; display: flex;">
+            <div style="margin-left: 10%;">
+                <h2>Observatorio de Salud</h2>
+                <p>Contenido</p>
+            </div>
+            <div style="margin-left: 10%;">
+                <h2>Atención al cliente</h2>
+                <p>Contenido</p>
+            </div>
+            <div style="margin-left: 10%;">
+                <h2>Servicio técnico</h2>
+                <p>Contenido</p>
+            </div>
+        </div>
+        <!--Educación--> 
+        <h1>Educación</h1>
+        <div class="Education" style="margin-left: 10px; display: grid;">
+            <div style="margin-left: 10%;">
+                <h2>Ingeniería en Mecatronica</h2>
+                <h4>2019 - Actualidad</h4>
+                <p>Contenido</p>
+            </div>
+            <div style="margin-left: 10%;">
+                <h2>Técnico Mecánico Electricista</h2>
+                <h4>2012 - 2018</h4>
+                <p>Contenido</p>
+            </div>
+        </div>
+        <!--Habilidades--> 
+        <h1>habilidades</h1>
+        <div class="Skils">
+            <div style="text-align: center; padding-top: 50px;">
+                <div class="ring">
+                    <div class="text">Excel<br><span>80%</span></div>
+                </div>
+                <div class="ring">
+                    <div class="text">Photoshop<br><span>60%</span></div>
+                </div>
+                <div class="ring">
+                    <div class="text">HTML/CSS<br><span>90%</span></div>
+                </div>
+                <div class="ring">
+                    <div class="text">Trabajador<br><span>90%</span></div>
+                </div>
+                <div class="ring">
+                    <div class="text">Compañero<br><span>90%</span></div>
+                </div>
+                <div class="ring">
+                    <div class="text">Liderazgo<br><span>90%</span></div>
+                </div>
+            </div>
+        </div>
+        <!--Proyectos--> 
+        <h1>Proyectos</h1>
+        <div class="Experience" style="margin-left: 10px; display: flex;">
+            <div style="margin-left: 10%;">
+                <h2>Portafolio Argetina Programa</h2>
+                <p>Portafolio Web realizado para Argentina Programa 4.0</p>
+            </div>
+            <div style="margin-left: 10%;">
+                <h2>Sistema de Gestión de Centros de Salud</h2>
+                <p>Plataforma Web realizada con herramientas de google para digitalizar y ordenar el trabajo que se arealiza en los centros de salud municipales.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
